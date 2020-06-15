@@ -39,29 +39,54 @@
   //     printf("안녕하세요. 저는 누구누구입니당.\n");
   //     w++;
   //   }
+  // // }
+
+
+  // void 다국어인사(int a, int b) {
+
+
+
+
+  //   for ( int i = 1; i <= b; i++){
+
+
+  //        if ( a == 3 ) {
+  //             printf("봉쥬르\n");
+  //            }
+  //            else if ( a == 2 ){
+  //               printf("하이\n");
+  //             }
+  //            else {
+  //                printf("안녕\n");
+  //            }
+  //          }
+    
   // }
 
 
-  void 다국어인사(int a, int b) {
+  int square(int a)
+ {
+   int sum = a * a;
+   return sum;
+ }
 
 
-    for ( int i = 1; i <= b; i++){
-        if ( a == 3 ) {
-        printf("봉쥬르\n");
-      }
-      else if ( a == 2 ){
-      printf("하이\n");
-      }
-      else {
-        printf("안녕\n");
-      }
-    }
+  int is_true() {
     
+    return 1;
   }
 
 
+  int is_even(int a) {
+    if ( a % 2 == 1 ) {
+      return 0;
+    }
+    else {
+      return 1;
+    }
+  }
 
-int main(void) {
+   int main(void) {
 
   // 위 함수를 올바르게 호출해서 아래처럼 출력되게 해주세요.
 
@@ -135,9 +160,34 @@ int main(void) {
   // // 출력 : 안녕하세요. 저는 누구누구입니다
 
 
-  다국어인사(3, 3); // 봉쥬르 3번 출력
-  다국어인사(1, 5); // 안녕하세요 5번 출력
-  다국어인사(2, 1); // 하이 1번 출력
+  // 다국어인사(3, 3); // 봉쥬르 3번 출력
+  // 다국어인사(1, 5); // 안녕하세요 5번 출력
+  // 다국어인사(2, 1); // 하이 1번 출력
+
+
+
+  int a = square(5); 
+
+  printf("%d\n",a); // 출력 25
+
+  int b = square(10); 
+  printf("%d\n",b); // 출력 100
+
   
+
+   if(is_true()) {
+    printf("true!!\n");
+  }
+  //출력 : true!!
+
+
+    for(int i = 1; i < 10; i++) {
+    if(is_even(i)) { // is_even() 함수 이용 
+      printf("짝수입니다.\n");
+    } else {
+      printf("홀수입니다.\n");
+    }
+  }
+
   return 0;
 }
